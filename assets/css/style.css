@@ -1,0 +1,295 @@
+
+@font-face{
+    font-family: Raleway700;
+    src: url('../police/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");
+    font-weight: 700;
+}
+@font-face{
+    font-family: Raleway;
+    src: url('../police/Raleway/Raleway-VariableFont_wght.ttf') format("truetype");
+
+}
+body{
+    font-family: Raleway;
+}
+
+html{
+    scroll-behavior:  smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: Raleway700;
+}
+
+.row{
+    /*Retour a la ligne automatique*/
+    flex-wrap: wrap;
+}
+
+.couleurBleu{
+    color: #0065FC;
+}
+
+.couleurBleuClaire{
+    color: #DEEBFF;
+}
+
+.couleurFondGris{
+    color: #F2F2F2;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.justifyContentCenter{
+    justify-content: center;
+}
+
+.alignItemCenter{
+    align-items: center;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+/*NAVIGATION*/
+
+.navBar{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.imgLogo{
+    width: 50%;
+}
+
+.blocLien{
+    min-height: 100px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.lienNav{
+    width: 30%;
+}
+
+.lienNav:hover, .lienNav:focus{
+    color: #0065FC;
+    box-shadow: 0px -2px 0px 0px #0065FC;
+    /*padding-top: 40px;*/
+}
+
+/*FIN NAVIGATION*/
+
+section{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.btnRechercher{
+    background-color: #0065FC;
+    color: white;
+
+    width: 8rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btnIconeRechercher{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    border: 0;
+    font-family: Raleway;
+}
+
+button:focus{
+    box-shadow: 0 0 0 0.2rem #007bff40;
+}
+
+.divRecherche{
+    height: 50px;
+    width: 100%;
+}
+
+input{
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    text-align: center;
+    font-family: Raleway;
+}
+
+.iconeLocalisation{
+    width: 50px;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.textGras{
+    font-weight: bold;
+    font-family: Raleway700;
+    font-size: 1rem;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.filtres{
+height: 50px;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 2px solid #F2F2F2;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    transition: background-color 800ms ease-in-out;
+}
+
+.filtres:focus, .filtres:hover{
+    box-shadow: none;
+    transition: background-color 800ms ease-in-out;
+    background-color: #DEEBFF;
+}
+
+.iconeFiltre{
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    border-radius: 2rem;
+    position: relative;
+    left: -10px;
+    color: #0065FC;
+}
+
+.divFiltres{
+    margin-top: 2rem;
+}
+
+.iconeInfo{
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    border: 2px solid #F2F2F2;
+    border-radius: 2rem;
+}
+
+.fondSection{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 65%;
+}
+
+.fondSectionPopulaire{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 25%;
+    margin-left: 3rem;
+}
+
+.card{
+    background-color: white;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px -5px;
+}
+
+.cardHebergement{
+    width: 30%;
+}
+
+
+.card > p, .etoileClassement {
+    margin-left: 1rem;
+}
+
+.etoileClassement{
+    padding-bottom: 1rem;
+}
+
+.imgHebergement{
+    width: 97%;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.imgPopulaire{
+    width: 35%;
+    object-fit: cover;
+    margin: 5px;
+    height: 170px;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.marginCardPopulaire{
+    margin-left: 1rem;
+    margin-right: 4rem;
+}
+
+.imgActivites{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.paddingActivites{
+    padding-bottom: 1rem;
+}
+
+.width25{
+    width: 25%;
+}
+
+#activites{
+    margin-top: 4rem;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #F2F2F2;
+    margin: -8px;
+}
+footer > div {
+    margin-right: 20%;
+    margin-left: 2%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer > div > a {
+    margin-bottom: 1rem;
+}
+
+footer > div > p {
+    margin-bottom: 2rem;
+}
+
+
+
+

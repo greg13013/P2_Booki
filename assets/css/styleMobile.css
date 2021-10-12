@@ -1,0 +1,113 @@
+.flexColumnMobile{
+    flex-direction: column;
+}
+
+.divLogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divLogo > a {
+    display: flex;
+    justify-content: center;
+}
+
+.imgLogo{
+    width: 40%;
+}
+
+.blocLien{
+    width: 100%;
+    min-height: 50px;
+}
+
+.lienNav{
+    width: 50%;
+    box-shadow: 0px 2px 0px 0px #F2F2F2;
+}
+
+.lienNav:hover{
+    box-shadow: 0px 2px 0px 0px #0065fc;
+}
+
+
+.divRecherche{
+    justify-content: center;
+}
+
+.divFiltres > div {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.filtres{
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+#hebergement{
+    flex-wrap: wrap-reverse;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+input{
+    width: 60%;
+}
+
+.btnRechercher{
+    width: 3rem;
+    display: none;
+}
+
+.btnIconeRechercher{
+    display: inline-block;
+    background-color: #0065FC;
+    color: white;
+    width: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    left: -10px;
+}
+
+.card{
+    margin-right: 0;
+}
+
+.fondSection{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent;
+}
+
+.cardHebergement{
+    width: auto;
+}
+
+.fondSectionPopulaire{
+    width: auto;
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0;
+}
+
+.width25{
+    width: auto;
+}
+
+.imgActivites{
+    height: 150px;
+}
+
+body{
+    margin: 0;
+}
+
+footer{
+    flex-direction: column;
+    margin: 0;
+}
