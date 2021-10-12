@@ -218,8 +218,12 @@ height: 50px;
 }
 
 
-.card > p, .etoileClassement {
+.card > a > p, .etoileClassement {
     margin-left: 1rem;
+}
+
+.width100{
+    width: 100%;
 }
 
 .etoileClassement{
