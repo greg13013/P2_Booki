@@ -236,6 +236,13 @@ height: 50px;
     border-top-right-radius: 0.7rem;
 }
 
+.titrePopulaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
 .imgPopulaire{
     width: 35%;
     object-fit: cover;
@@ -247,7 +254,7 @@ height: 50px;
 
 .marginCardPopulaire{
     margin-left: 1rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 
 .imgActivites{
