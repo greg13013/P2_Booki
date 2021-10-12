@@ -222,12 +222,17 @@ height: 50px;
     margin-left: 1rem;
 }
 
+.divCard{
+    justify-content: space-between;
+}
+
 .width100{
     width: 100%;
 }
 
 .etoileClassement{
     padding-bottom: 1rem;
+    display: flex;
 }
 
 .imgHebergement{
