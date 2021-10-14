@@ -11,6 +11,7 @@
 }
 body{
     font-family: Raleway;
+    font-size: 20px;
 }
 
 html{
@@ -60,7 +61,16 @@ h1{
     flex-direction: column;
 }
 
+
+
+.paddingTop2{
+    padding-top: 2rem;
+}
+
 /*NAVIGATION*/
+.divLogo{
+    margin-left: 50px;
+}
 
 .navBar{
     width: 100%;
@@ -72,14 +82,15 @@ h1{
 }
 
 .blocLien{
-    min-height: 100px;
-    width: 25%;
+    min-height: 150px;
+    width: 20%;
     display: flex;
     justify-content: center;
+    padding-right: 4rem;
 }
 
 .lienNav{
-    width: 30%;
+    width: 50%;
 }
 
 .lienNav:hover, .lienNav:focus{
@@ -91,17 +102,17 @@ h1{
 /*FIN NAVIGATION*/
 
 section{
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 60px;
+    padding-left: 60px;
 }
 
 .btnRechercher{
     background-color: #0065FC;
     color: white;
 
-    width: 8rem;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 11rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .btnIconeRechercher{
@@ -119,28 +130,30 @@ button:focus{
 }
 
 .divRecherche{
-    height: 50px;
+    height: 60px;
     width: 100%;
 }
 
 input{
     border: 1px solid #F2F2F2;
     font-weight: bold;
-    text-align: center;
+    /*text-align: center;*/
     font-family: Raleway;
+    width: 15%;
+    padding-left: 1rem;
 }
 
 .iconeLocalisation{
-    width: 50px;
+    width: 60px;
     background-color: #F2F2F2;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .textGras{
     font-weight: bold;
     font-family: Raleway700;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .gras{
@@ -148,33 +161,36 @@ input{
 }
 
 .filtres{
-height: 50px;
+    height: 65px;
     border-radius: 2rem;
     background-color: transparent;
-    border: 2px solid #F2F2F2;
-    margin-left: 2rem;
-    padding-right: 1rem;
-    transition: background-color 800ms ease-in-out;
+    border: 4px solid #F2F2F2;
+    margin-left: 40px;
+    padding-right: 32px;
+    padding-left: 16px;
+    transition: 500ms ease-in-out;
 }
 
 .filtres:focus, .filtres:hover{
     box-shadow: none;
-    transition: background-color 800ms ease-in-out;
+    transition: 500ms ease-in-out;
     background-color: #DEEBFF;
+    border-color: #DEEBFF;
 }
 
 .iconeFiltre{
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background-color: #DEEBFF;
     border-radius: 2rem;
     position: relative;
-    left: -10px;
+    left: -20px;
     color: #0065FC;
 }
 
 .divFiltres{
     margin-top: 2rem;
+    margin-left: 10px;
 }
 
 .iconeInfo{
@@ -189,10 +205,10 @@ height: 50px;
 .fondSection{
     background-color: #F2F2F2;
     border-radius: 1rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    width: 65%;
+    width: 63%;
 }
 
 .fondSectionPopulaire{
@@ -201,25 +217,32 @@ height: 50px;
     padding-left: 2rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    width: 25%;
+    width: 28%;
     margin-left: 3rem;
+}
+
+.titrePopulaire > i {
+    font-size: 32px;
 }
 
 .card{
     background-color: white;
-    margin-right: 2rem;
+    margin-right: 40px;
     margin-bottom: 2rem;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px -5px;
+    box-shadow: 0px 0px 20px -12px;
+    transition: 500ms ease-in-out;
 }
 
 .cardHebergement{
-    width: 30%;
+    width: 29%;
 }
 
 
 .card > a > p, .etoileClassement {
     margin-left: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .divCard{
@@ -231,7 +254,7 @@ height: 50px;
 }
 
 .etoileClassement{
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem;*/
     display: flex;
 }
 
@@ -285,15 +308,20 @@ height: 50px;
     margin-top: 4rem;
 }
 
+.cardActivites{
+    margin-bottom: 4rem;
+}
+
 /*FOOTER*/
 
 footer{
     background-color: #F2F2F2;
     margin: -8px;
+    padding-left: 60px;
 }
 footer > div {
     margin-right: 20%;
-    margin-left: 2%;
+    /*margin-left: 2%;*/
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -304,6 +332,297 @@ footer > div > a {
 
 footer > div > p {
     margin-bottom: 2rem;
+}
+
+@media (max-width: 1600px) {
+    .cardHebergement{
+        width: 25%;
+    }
+
+    .flexDirectionInitial{
+        justify-content: center;
+    }
+}
+
+/*VERSION TABLETTE*/
+
+@media (min-width: 768px) and (max-width: 992px){
+
+    .textGras{
+        font-size: 16px;
+    }
+
+    .flexColumnMobile{
+        flex-direction: column;
+    }
+
+    .divLogo{
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divLogo > a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgLogo{
+        width: 40%;
+    }
+
+    .blocLien{
+        width: 100%;
+        min-height: 50px;
+        padding-right: 0;
+    }
+
+    .lienNav{
+        width: 50%;
+        box-shadow: 0px 2px 0px 0px #F2F2F2;
+    }
+
+    .lienNav:hover{
+        box-shadow: 0px 2px 0px 0px #0065fc;
+    }
+
+    input{
+        width: auto;
+    }
+
+    #hebergement{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fondSectionPopulaire{
+        width: auto;
+        margin-left: 0;
+    }
+
+    .divFiltres > div {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .filtres{
+        height: 50px;
+        margin-left: 16px;
+        margin-bottom: 16px;
+        padding-left: 0;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+
+    .iconeFiltre{
+        width: 50px;
+        height: 50px;
+        left: -10px;
+    }
+
+    .cardHebergement{
+        width: 45%;
+    }
+
+    .card{
+        margin-right: 20px;
+    }
+
+
+    .fondSection{
+        margin-top: 32px;
+        width: auto;
+    }
+
+    .flexDirectionInitial{
+        flex-direction: initial;
+    }
+
+
+}
+
+
+
+/*VERSION MOBILE*/
+
+@media (max-width: 768px) {
+
+    .marginTopMobilePopulaire{
+        margin-top: 10px;
+    }
+
+    .textGras{
+        font-size: 16px;
+    }
+
+    .flexColumnMobile{
+        flex-direction: column;
+    }
+
+    .divLogo{
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divLogo > a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgLogo{
+        width: 40%;
+    }
+
+    .blocLien{
+        width: 100%;
+        min-height: 50px;
+        padding-right: 0;
+    }
+
+    .titrePopulaire > i {
+        font-size: 20px;
+    }
+
+    .marginLeft15{
+        margin-left: 15px !important;
+    }
+
+    .paddingTop2{
+        padding-top: 0;
+    }
+
+    .lienNav{
+        width: 50%;
+        box-shadow: 0px 2px 0px 0px #F2F2F2;
+    }
+
+    .lienNav:hover{
+        box-shadow: 0px 2px 0px 0px #0065fc;
+    }
+
+
+    .divRecherche{
+        justify-content: center;
+    }
+
+    .divFiltres > div {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .filtres{
+        height: 50px;
+        margin-left: 0;
+        margin-bottom: 16px;
+        padding-left: 0;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+
+    .iconeFiltre{
+        width: 50px;
+        height: 50px;
+        left: -10px;
+    }
+
+    #hebergement{
+        flex-wrap: wrap-reverse;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    input{
+        width: 60%;
+    }
+
+    .btnRechercher{
+        width: 3rem;
+        display: none;
+    }
+
+    .iconeLocalisation{
+        font-size: 20px;
+    }
+
+    .btnIconeRechercher{
+        display: inline-block;
+        background-color: #0065FC;
+        color: white;
+        width: 4rem;
+        font-size: 20px;
+        border-radius: 1rem;
+        position: relative;
+        left: -10px;
+    }
+
+    .card{
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .fondSection{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: transparent;
+    }
+
+    .cardHebergement{
+        width: auto;
+    }
+
+    .fondSectionPopulaire{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0;
+    }
+
+    .marginCardPopulaire{
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .imgPopulaire{
+        height: 130px;
+    }
+
+    .width25{
+        width: auto;
+    }
+
+    .imgActivites{
+        height: 150px;
+    }
+
+    body{
+        margin: 0;
+        font-size: initial;
+    }
+
+    footer{
+        flex-direction: column;
+        margin: 0;
+        padding-left: 16px;
+    }
+
+    #filtre{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    #activites{
+        margin-top: 0;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
 }
 
 
