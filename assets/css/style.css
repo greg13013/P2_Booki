@@ -336,7 +336,11 @@ footer > div > p {
 
 @media (max-width: 1600px) {
     .cardHebergement{
-        width: 25%;
+        width: 40%;
+    }
+
+    .imgPopulaire{
+        height: auto;
     }
 
     .flexDirectionInitial{
@@ -347,6 +351,10 @@ footer > div > p {
 /*VERSION TABLETTE*/
 
 @media (min-width: 768px) and (max-width: 992px){
+
+    .imgPopulaire{
+        height: 170px;
+    }
 
     .textGras{
         font-size: 16px;
